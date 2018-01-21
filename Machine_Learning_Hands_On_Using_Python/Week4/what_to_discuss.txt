@@ -1,0 +1,11 @@
+1. knn => 
+a) how we can use images directly without extracting the features from it
+b) loading the ENTIRE dataset to memory => RAM issues
+c) 2 hyperparameters used in KNN => 1. Low value of k and high value of k. Oversmoothing? 2. Actual distance metric used: Euclidean distance? Manhattan distance?
+d) Drawbacks :
+	i) how no actual learning takes place in knn? If it makes mistake, it has no way to "correct" or "improve" itself for later classification.
+	ii) High dimensional data? knn becomes questionable, training time increases with O(n)
+e) how since NO PARAMETERS are learnt, classification TIME is more. Increases with the training data size => O(n)
+f) Given these cons why study knn? Algorithm is simple. It is easy to understand. And most importantly, it gives us a baseline that we can use to compare neural networks and CNN.
+g) Introduction to PARAMETERISED LEARNING => Linear Classifier
+
