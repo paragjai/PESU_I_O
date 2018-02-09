@@ -3,6 +3,6 @@
 <h3> List of few helpful resources </h3>
 <ul>
 <li> For a Neophyte in Github : https://www.youtube.com/watch?v=yXT1ElMEkW8</li>
-<li> Watch this video to learn the basic commands of Github which you may require for submission of the assignments : https://www.youtube.com/watch?v=dSl_qnWO104<br>
+<li> Commands required for submission of the assignments : https://www.youtube.com/watch?v=dSl_qnWO104<br>
 Fork this repository : https://github.com/PollenJain/PESU_I_O </li>
 <li> To resolve Merge Conflicts : https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/ </li>
