@@ -1,0 +1,27 @@
+1-Machine learning is the science of getting computers to act without being explicitly programmed. They automatically learn through experience. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.it is also a branch of artificial intelligence 
+2-in a machine learning program our machine runs the data and the  desired output is run to produce a program which is then used in a regular program to produce the output.
+   Machine learning programs learn to solve examples by training examples .It solves its problem on its own.
+3-
+i)	Program- the multiplication has to just follow a certain formula  for every case
+ii)	Algorithm- the home page learns from the past experiences with the user and displays the suggestions accordingly 
+iii)	Algorithm-considering the past interactions with user the items are sorted in a specific order when the user visits the site again
+iv)	Program – it has to just follow a certain algorithm which will give it right output for every case
+
+4- Class of task is checkers  game and experience obtained by playing games against itself and p is its ability to win games . 
+
+5-To have a well-defined learning problem, we must identity these three features: the class of tasks, the measure of performance to be improved, and the source of experience.
+
+
+6-target concept is an operational description of the ideal target function V. while approximating function is the approximation acquired by learning algorithms to the target function.
+In the checkers learning problem we choose the game against itself as the training experience .we determined the value of our target function with the help of corresponding values on the board for every move. we represented our  function with the help of a linear function consisting of six features 
+We used gradient descent to determine our learning algorithm.
+7- What algorithms exist for learning general target functions from specific training examples? In what settings will particular algorithms converge to the desired function, given sufficient training data? Which algorithms perform best for which types of problems and representations? 
+How much training data is sufficient? What general bounds can be found to relate the confidence in learned hypotheses to the amount of training experience and the character of the learner's hypothesis space?
+When and how can prior knowledge held by the learner guide the process of generalizing from examples? Can prior knowledge be helpful even when it is only approximately correct? What is the best strategy for choosing a useful next training experience, and how does the choice of this strategy alter the complexity of the learning problem?
+What is the best way to reduce the learning task to one or more function approximation problems? Put another way, what specific functions should the system attempt to learn? Can this process itself be automated? 
+How can the learner automatically alter its representation to improve its ability to represent and learn the target function?
+
+
+
+ 
+
