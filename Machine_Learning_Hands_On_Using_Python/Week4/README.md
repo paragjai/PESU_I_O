@@ -4,6 +4,6 @@ Link to Week 4 video : Not yet received
 
 <h3> Assignment Submission </h3>
 <p>Answer the questions and submit the answers in a text file named in this format<br>
-&lt; Full Name &gt; _ &lt; USN &gt; .txt</p>
+&lt;Full Name&gt;_&lt;USN&gt; .txt</p>
 <p>Deadline for Tasks : <i>03rd March, 2018</i></p>
 
