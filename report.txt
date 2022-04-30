@@ -1,0 +1,48 @@
+Date of submission: 9/2/2018
+BY-KARTIKEY MISHRA
+INTRODUCTION:
+A report on designing a learning system
+How to choose the :
+● Target experience? ● Target function? ● Representation for the Target Function? ● Function Approximation Algorithm?
+The checkers game has been taken into consideration to find answers to the above question  
+
+Choosing the target experience 
+There are two types of training experiences  
+Direct or indirect?
+Direct - observable, measurable
+– sometimes difficult to obtain
+• Checkers - is a move the best move for a situation?
+– sometimes straightforward
+• Sell CDs - how many CDs sold on a day? (look at receipts)
+Indirect - must be inferred from what is measurable
+– Checkers - value moves based on outcome of game
+A second important attribute of the training experience is the degree to which the learner controls the sequence of training examples. The learner might have the complete control on its next move and explore what is the best move at each point or the learner might rely on the teacher to select informative board states and to provide the correct move for each.
+A third important attribute of the training experience is how well it represents the distribution of examples over which the final system performance P must be measured– If Checkers learner only plays itself will it be able to play humans? Thus the  
+Choosing a target function
+In this design we again  consider our  checkers-playing program that can generate the legal moves from any board state .
+Checkers - what does learner do - make moves
+ChooseMove - select move based on board
+ChooseMove(b): from b pick move with highest value
+
+Possible definition:
+V(b) = 100 if b is a final board state of a win
+V(b) = -100 if b is a final board state of a loss
+V(b) = 0 if b is a final board state of a draw
+if b not final state, V(b) =V(b´) where b´ is best final board
+reached by starting at b and playing optimally from there
+Correct, but not operational.
+ For the fourth case the program has to sech for the optimal line of play till the end of the game from the available move within realistic time bounds . therefore we have to find a operational description for our function V(b) .
+Choosing a representation for target function
+     Polynomial function of problem features
+    =     W0 +W1X1+W2X2+W3X3+W4X4+W5X5+W6X6
+      Thus the more expressive the representation, the more training data the program will require in order to choose among the alternative hypotheses it can represent or the more no of board features it will require to describe  if we consider our checkers problem. The coefficients of board features(Xn) represent the weightage of each move .
+       Choosing a function approximation algorithm
+   Estimating training values :
+    This is used to find out the values for coefficients in the function V(b)
+    This approach is to assign the training value of Vtrain(b) for any intermediate board state b to be V^(successor(b)), where V^ is the learner's current approximation to V and where Successor(b) denotes the next board state following b for which it is again the program's turn to move (i.e., the board state following the program's move and the opponent's response). This rule for estimating training values can be summarized as V^(successor(b)) tends to be Vtrain(b).
+Adjusting
+      it can be done by an algorithm  called the least mean squares, or LMS training rule. For each observed training example it adjusts the weights a small amount in the direction that reduces the error on this training example.
+         It can be represented by Wi=Wi+n(Vtrain(b)-V^(b))Xi
+
+         We use LMS algorithm to adjust our function to have the minimal error in our approximation
+          when the error (Vtrain(b) - c(b)) is zero, no weights are changed. When (Vtrain(b) – V^(b)) is positive (i.e., when V^(b) is too low), then each weight is increased in proportion to the value of its corresponding feature. This will raise the value of V^(b), reducing the error
